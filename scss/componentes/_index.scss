@@ -1,0 +1,111 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+header{
+    
+    background-color: #121212;
+    padding: 30px 0;
+        ul{
+            list-style: none;
+            nav{
+                a{
+                &:hover,
+                .activo {
+                    color: #fff;
+                    border-bottom: 3px solid #0064ff;
+                    border-radius: 2px;
+                } 
+                    color: #aaa;
+                    text-decoration: none;
+                    margin-right: 30px;
+                }
+            }
+        }
+}
+
+
+@media screen and (max-width: 800px) {
+    header img{
+        margin-bottom: 10px;
+    }
+    header .top_bar{
+        flex-direction: column;
+        text-align: center;
+    }
+    .pelicula_main{
+        font-size: 14px;
+    }
+}
+
+
+body{
+    background-color: #121212 !important;
+    font-family: proxima-nova,sans-serif !important;
+}
+
+.carousel-indicators{
+    padding: 0 !important;
+}
+.grid-container img{
+    width: 80%;
+    border: 10px transparent;
+}
+.grid-container img:hover {
+    width: 80%;
+    border: #0064ff 4px solid;
+    transition: width 2s;
+    cursor: pointer;
+
+}
+
+footer{
+    padding: 30px 0;
+    ul{
+        nav{
+            a{
+                color: #aaa;
+                font-size: 12px;
+                text-decoration: none;
+                margin-right: 30px;
+                cursor: pointer;
+                transition: 1s ease all;
+                &:hover{
+                    color: #fff;
+                }
+
+            }
+        }
+    }
+}
+row-12{
+    i{
+        padding-right: 10px;
+    }
+}
+.row-cols-2 img {
+    --g: 3px;     
+    --b: 4px;    
+    --c: #0064ff; 
+    
+    
+    padding: calc(var(--g) + var(--b));
+    --_c: #0000 0 25%, var(--c) 0 50%;
+    --_g1: repeating-linear-gradient(90deg ,var(--_c)) repeat-x;
+    --_g2: repeating-linear-gradient(180deg,var(--_c)) repeat-y;
+    background:
+      var(--_g1) var(--_p, 25%) 0   ,var(--_g2) 0    var(--_p,125%),
+      var(--_g1) var(--_p,125%) 100%,var(--_g2) 100% var(--_p, 25%);
+    background-size: 200% var(--b),var(--b) 200%;
+    cursor: pointer;
+    filter: grayscale(50%);
+    transition: .3s;
+  }
+  img:hover {
+    --_p: 75%;
+    filter: grayscale(0%);
+  }
+h1{
+    display: none;
+}
+  
