@@ -1,0 +1,22 @@
+$top_bar:(
+    ancho: 90%,
+    margen: auto);
+
+.top_bar{
+    width: map-get($top_bar, ancho);
+    margin: map-get($top_bar, margen);
+
+}
+.bottom{
+    width: map-get($top_bar, ancho);
+    margin: map-get($top_bar, margen);
+}
+
+$activo:(
+    borde: 3px solid #0064ff,
+    radio: 2px);
+
+a.activo{
+    border-bottom: map-get($activo, borde);
+    border-radius: map-get($activo, radio);
+}

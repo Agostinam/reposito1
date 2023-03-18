@@ -1,0 +1,264 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+header{
+    
+    background-color: #121212;
+    padding: 30px 0;
+        ul{
+            list-style: none;
+            nav{
+                a{
+                &:hover,
+                .activo {
+                    color: #fff;
+                    border-bottom: 3px solid #0064ff;
+                    border-radius: 2px;
+                } 
+                    color: #aaa;
+                    text-decoration: none;
+                    margin-right: 30px;
+                }
+            }
+        }
+}
+
+
+@media screen and (max-width: 800px) {
+    header img{
+        margin-bottom: 10px;
+    }
+    header .top_bar{
+        flex-direction: column;
+        text-align: center;
+    }
+    .pelicula_main{
+        font-size: 14px;
+    }
+}
+
+
+body{
+    background-color: #121212 !important;
+    font-family: proxima-nova,sans-serif !important;
+}
+
+.carousel-indicators{
+    padding: 0 !important;
+}
+.grid-container img{
+    width: 80%;
+    border: 10px transparent;
+}
+.grid-container img:hover {
+    width: 80%;
+    border: #0064ff 4px solid;
+    transition: width 2s;
+    cursor: pointer;
+
+}
+
+footer{
+    padding: 30px 0;
+    margin: none;
+    background-color: #121212;
+    ul{
+        nav{
+            a{
+                color: #aaa;
+                font-size: 12px;
+                text-decoration: none;
+                margin-right: 30px;
+                cursor: pointer;
+                transition: 1s ease all;
+                &:hover{
+                    color: #fff;
+                }
+
+            }
+        }
+    }
+}
+row-12{
+    i{
+        padding-right: 10px;
+    }
+}
+.row-cols-2 img {
+    --g: 3px;     
+    --b: 4px;    
+    --c: #0064ff; 
+    
+    
+    padding: calc(var(--g) + var(--b));
+    --_c: #0000 0 25%, var(--c) 0 50%;
+    --_g1: repeating-linear-gradient(90deg ,var(--_c)) repeat-x;
+    --_g2: repeating-linear-gradient(180deg,var(--_c)) repeat-y;
+    background:
+      var(--_g1) var(--_p, 25%) 0   ,var(--_g2) 0    var(--_p,125%),
+      var(--_g1) var(--_p,125%) 100%,var(--_g2) 100% var(--_p, 25%);
+    background-size: 200% var(--b),var(--b) 200%;
+    cursor: pointer;
+    filter: grayscale(50%);
+    transition: .3s;
+  }
+  img:hover {
+    --_p: 75%;
+    filter: grayscale(0%);
+  }
+
+h1{
+    display: none;
+}
+
+/*series eleccionada---------*/
+
+.btn-play{
+    display:inline-block;
+    position:relative;
+    color: #ffff;
+    font-family: proxima-nova,sans-serif;
+
+    }
+         
+    .btn-play {
+     background-color: #0064ff !important;      
+      margin: 10px;
+      padding: 15px 45px;
+      text-align: center;
+      transition: 0.5s;
+      background-size: 200% auto;           
+      border-radius: 15px !important;
+      color: #121212;
+      display: block;
+    }
+
+    .btn-play:hover {
+      background-position: right center; /* change the direction of the change here */
+      color: #fff;
+      text-decoration: none;
+    }
+   .img-logo img{
+    max-width: 300px;
+ }  
+
+ .fa-solid{
+    margin-left: 5px;
+ }
+  
+  .btn-group button:not(:last-child) {
+    border-right: none; /* Prevent double borders */
+  }
+  
+  /* Clear floats (clearfix hack) */
+  .btn-group:after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+  /* Add a background color on hover */
+  .btn-group button:hover {
+    background-color: gray;
+  }
+
+.star-wrapper a{
+    margin: 2px;
+    direction: rtl;
+    text-decoration: none ;
+    color: #fff;
+    transition: all 0.5s;
+    margin: 4px;
+    display: inline-block;
+
+}
+
+.grid-container1 img{
+    width: 80%;
+    border: 10px transparent;
+}
+.grid-container1 img:hover {
+    width: 80%;
+    border: #0064ff 4px solid;
+    transition: width 2s;
+    cursor: pointer;
+
+}
+
+.star-wrapper a:hover {
+    color: gold;
+    transform: scale(1.3);
+  }
+  .s1:hover ~ a {
+    color: gold;
+  }
+  .s2:hover ~ a {
+    color: gold;
+  }
+  .s3:hover ~ a {
+    color: gold;
+  }
+  .s4:hover ~ a {
+    color: gold;
+  }
+  .s5:hover ~ a {
+    color: gold;
+  }
+
+
+  .container {
+    padding-bottom: 3rem;
+  }
+  .watchnow img {
+    -webkit-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    margin-top: 10px;
+    margin: 20px;
+    width: 60%;
+    padding-top: 0px;
+
+  }
+  .watchnow img:hover {
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+    
+
+   
+  }
+  .last {
+    margin-top: 6.5rem;
+  }
+  .featured_wrapper {
+    position: relative;
+    
+  }
+  .featured_wrapper img {
+    width: 100%;
+    width: 100%;
+    height: 100vh;
+    -o-object-fit: cover;
+    object-fit: cover;
+    -o-object-position: top;
+    object-position: top;
+  }
+  .title_wrapper {
+    position: absolute;
+    width: 100%;
+    left: 2rem;
+    bottom: 2rem;
+    padding: 20px 40px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  
+  
+  
+/*inicio------------*/
+
+
+  
+
+

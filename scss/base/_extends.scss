@@ -1,0 +1,85 @@
+%disposicion{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer .bottom{
+    @extend %disposicion;
+}
+footer{
+    @extend %disposicion;
+}
+
+%titulosh{
+    color: #ffffff !important;
+    border-bottom: 20px;
+    margin-top: 40px;
+    font-size: 50px;
+}
+h5, h4{ 
+    @extend %titulosh;
+}
+
+%titulosseries{
+    color:#ffffff !important;
+    border-bottom: 20px;
+    margin-top: 40px;
+    font-size: large;
+}
+
+h6{
+   @extend %titulosseries; 
+}
+
+header .top_bar{
+    @extend %disposicion;
+}
+
+%usuario{
+    color: #ffffff;
+    background-color: #121212;
+    transition: font size 2s;
+    text-decoration: none;
+    padding: 20px;
+}
+.row-11 p{
+    @extend %usuario;
+    :hover{
+        font-size: 18px;
+        text-decoration: underline 2px #0064ff solid;
+    }
+}
+.row-11 a{
+    @extend %usuario;
+    :hover{
+        font-size: 18px;
+        text-decoration: underline 2px #0064ff solid;
+    }
+}
+%pie{
+    color: #aaa;
+    font-size: 20px;
+    text-decoration: none;
+    margin-right: 20px;
+    cursor:pointer;
+    transition: 1s ease all;
+    justify-content: space-between
+}
+footer .row-12{
+    @extend %pie;
+    :hover{
+        color: #ffffff;
+    }
+}
+
+/*series pagina seleccionada*/
+
+.watchnow p{
+    @extend %titulosseries;
+    
+}
+
+
+
+
